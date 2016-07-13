@@ -1,5 +1,7 @@
 package com.example.android.tourguideapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -26,7 +28,14 @@ public class ArchaeoFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_card_list, container, false);
 
         final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();
-        tourCards.add(new TourCard("", "", ""));
+        tourCards.add(new TourCard("Amman Citadel", "Link", ""));
+        tourCards.add(new TourCard("King Abdullah I Mosque", "", ""));
+        tourCards.add(new TourCard("Roman Theatre", "", ""));
+        tourCards.add(new TourCard("Royal Automobile Museum", "", ""));
+        tourCards.add(new TourCard("Jordan Archaeological Museum", "", ""));
+        tourCards.add(new TourCard("Wakalat Street", "", ""));
+        tourCards.add(new TourCard("Mango House", "", ""));
+        tourCards.add(new TourCard("Intercontinental Jordan Hotel", "", ""));
 
 
         TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.category_Main_Sites);
@@ -42,6 +51,13 @@ public class ArchaeoFragment extends Fragment {
                 TourCard tourCard = tourCards.get(position);
 
                 //here goes the intent for a browser
+                String url = tourCard.getCardInfoLink();
+
+                if (!url.startsWith("http://") && !url.startsWith("https://"))
+                    url = "http://" + url;
+
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                startActivity(browserIntent);
             }
         });
 
