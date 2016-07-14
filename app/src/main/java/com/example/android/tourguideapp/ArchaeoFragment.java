@@ -27,7 +27,7 @@ public class ArchaeoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tour_card_list, container, false);
 
-        final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();
+        final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();/**
         tourCards.add(new TourCard("Amman Citadel", "Link", ""));
         tourCards.add(new TourCard("King Abdullah I Mosque", "", ""));
         tourCards.add(new TourCard("Roman Theatre", "", ""));
@@ -37,7 +37,7 @@ public class ArchaeoFragment extends Fragment {
         tourCards.add(new TourCard("Mango House", "", ""));
         tourCards.add(new TourCard("Intercontinental Jordan Hotel", "", ""));
 
-
+         **/
         TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.category_Main_Sites);
 
         ListView cardListView = (ListView) rootView.findViewById(R.id.TourCardList);
