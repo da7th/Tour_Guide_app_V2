@@ -27,18 +27,11 @@ public class ArchaeoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tour_card_list, container, false);
 
-        final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();/**
-        tourCards.add(new TourCard("Amman Citadel", "Link", ""));
-        tourCards.add(new TourCard("King Abdullah I Mosque", "", ""));
-        tourCards.add(new TourCard("Roman Theatre", "", ""));
-        tourCards.add(new TourCard("Royal Automobile Museum", "", ""));
-        tourCards.add(new TourCard("Jordan Archaeological Museum", "", ""));
-        tourCards.add(new TourCard("Wakalat Street", "", ""));
-        tourCards.add(new TourCard("Mango House", "", ""));
-        tourCards.add(new TourCard("Intercontinental Jordan Hotel", "", ""));
-
-         **/
-        TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.category_Main_Sites);
+        final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();
+        tourCards.add(new TourCard("Jordan Archaeological Museum", "http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A", R.drawable.jordan_archaeological_museum));
+        tourCards.add(new TourCard("Roman Theatre", "https://en.wikipedia.org/wiki/Roman_theater_(Amman)", R.drawable.roman_theatre));
+        tourCards.add(new TourCard("Roman Philadelphia", "https://en.wikipedia.org/wiki/Ala%C5%9Fehir", R.drawable.roman_philadelphia));
+        TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.colorPrimary);
 
         ListView cardListView = (ListView) rootView.findViewById(R.id.TourCardList);
 
@@ -56,7 +49,7 @@ public class ArchaeoFragment extends Fragment {
                 if (!url.startsWith("http://") && !url.startsWith("https://"))
                     url = "http://" + url;
 
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(browserIntent);
             }
         });

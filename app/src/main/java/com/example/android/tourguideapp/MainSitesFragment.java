@@ -28,18 +28,15 @@ public class MainSitesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_card_list, container, false);
 
         final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();
-        tourCards.add(new TourCard("Petra", "http://www.visitpetra.jo/", R.drawable.petra));
-        tourCards.add(new TourCard("Mount Nebo", "https://en.wikipedia.org/wiki/Mount_Nebo", R.drawable.mount_nebo));
-        tourCards.add(new TourCard("Madaba Map", "https://en.wikipedia.org/wiki/Madaba_Map", R.drawable.madaba_map));
-        tourCards.add(new TourCard("Royal Automobile Museum", "http://www.royalautomuseum.jo/", R.drawable.royal_automobile_museum));
-        tourCards.add(new TourCard("Qasr Amra", "https://en.wikipedia.org/wiki/Qasr_Amra", R.drawable.qasr_amra));
         tourCards.add(new TourCard("Amman Citadel", "http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A", R.drawable.amman_citadel));
+        tourCards.add(new TourCard("King Abdullah I Mosque", "https://www.google.jo/url?sa=t&rct=j&q=&esrc=s&source=web&cd=19&cad=rja&uact=8&ved=0ahUKEwjOpqq2p_jNAhVNnRQKHZACDjMQmhMIqAEwEg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKing_Abdullah_I_Mosque&usg=AFQjCNHJNuXRfcsM9aNbmRzmPBCYcptMuw&sig2=dmCc6QFjgcxoA0MIMyoabg&bvm=bv.127178174,d.d2s", R.drawable.king_abdullah_i_mosque));
         tourCards.add(new TourCard("Roman Theatre", "https://en.wikipedia.org/wiki/Roman_theater_(Amman)", R.drawable.roman_theatre));
-        tourCards.add(new TourCard("Montreal", "https://en.wikipedia.org/wiki/Montreal_(Crusader_castle)", R.drawable.montreal));
-        tourCards.add(new TourCard("Ajloun Castle", "https://en.wikipedia.org/wiki/Ajloun_Castle", R.drawable.ajloun_castle));
-        tourCards.add(new TourCard("Azraq Wetland reserve", "https://en.wikipedia.org/wiki/Azraq_Wetland_Reserve", R.drawable.azraq_wetland_reserve));
+        tourCards.add(new TourCard("Royal Automobile Museum", "http://www.royalautomuseum.jo/", R.drawable.royal_automobile_museum));
+        tourCards.add(new TourCard("Jordan Archaeological Museum", "http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A", R.drawable.jordan_archaeological_museum));
+        tourCards.add(new TourCard("Mango House", "https://en.wikipedia.org/wiki/Mango_House", R.drawable.mango_house));
 
-        TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.category_Main_Sites);
+
+        TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.colorPrimary);
 
         ListView cardListView = (ListView) rootView.findViewById(R.id.TourCardList);
 

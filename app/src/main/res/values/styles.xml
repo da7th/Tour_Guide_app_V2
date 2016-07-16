@@ -9,9 +9,9 @@
     </style>
 
     <style name="tourTabLayout" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">#FFFFFF</item>
-        <item name="tabBackground">@color/colorPrimary</item>
-        <item name="tabSelectedTextColor">#FFFFFF</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabBackground">@color/colorPrimaryDark</item>
+        <item name="tabSelectedTextColor">@color/colorPrimaryTextIcons</item>
     </style>
 
 </resources>

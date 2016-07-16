@@ -3,8 +3,8 @@
 
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="88dp"
-    android:background="@android:color/black"
+    android:layout_height="176dp"
+    android:background="@color/colorAccent"
     android:orientation="horizontal">
 
     <ImageView
@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="bottom"
+        android:gravity="center"
         android:paddingLeft="16dp"
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@android:color/white"
@@ -26,8 +26,9 @@
 
     <ImageView
         android:id="@+id/tour_card_link"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:layout_gravity="center_vertical" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_info_white_24dp" />
 
 </LinearLayout>

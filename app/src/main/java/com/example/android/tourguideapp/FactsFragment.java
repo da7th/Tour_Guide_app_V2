@@ -39,7 +39,7 @@ public class FactsFragment extends Fragment {
         tourCards.add(new TourCard("Official Language: Arabic", "http://www.countryreports.org/country/Jordan.htm"));
 
 
-        TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.category_Main_Sites);
+        TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.colorPrimary);
 
         ListView cardListView = (ListView) rootView.findViewById(R.id.TourCardList);
 
@@ -57,7 +57,7 @@ public class FactsFragment extends Fragment {
                 if (!url.startsWith("http://") && !url.startsWith("https://"))
                     url = "http://" + url;
 
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.countryreports.org/country/Jordan.htm"));
                 startActivity(browserIntent);
             }
         });
