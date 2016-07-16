@@ -1,3 +1,50 @@
 <resources>
     <string name="app_name">Tour Guide App</string>
+
+    <string name="main_sites_tag">Main Sites</string>
+    <string name="archaeo_tag">Archaeological</string>
+    <string name="historical_tag">Historical</string>
+    <string name="facts_tag">Facts</string>
+
+    <string name="jordan_archaeological_museum">Jordan Archaeological Museum</string>
+    <string name="roman_theatre">Roman Theatre</string>
+    <string name="roman_philadelphia">Roman Philadelphia</string>
+    <string name="jordan_archaeological_museum_link">http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A</string>
+    <string name="roman_theatre_link">https://en.wikipedia.org/wiki/Roman_theater_(Amman)</string>
+    <string name="roman_philadelphia_link">https://en.wikipedia.org/wiki/Ala%C5%9Fehir</string>
+
+    <string name="flag_of_jordan">The Flag of Jordan</string>
+    <string name="capital_amman">Capital: Amman</string>
+    <string name="gov_type">Gov: Constitutional Monarchy</string>
+    <string name="currency_jod">Currency: JOD</string>
+    <string name="population">Population: 8,117,564</string>
+    <string name="country_area">Total Area: 34,495 sq.miles</string>
+    <string name="location">Location: Middle East</string>
+    <string name="official_language">Official Language: Arabic</string>
+    <string name="facts_link">https://en.wikipedia.org/wiki/Flag_of_Jordan</string>
+
+    <string name="petra">Petra</string>
+    <string name="mount_nebo">Mount Nebo</string>
+    <string name="madaba_map">Madaba Map</string>
+    <string name="royal_auto_museum">Royal Automobile Museum</string>
+    <string name="qasr_amra">Qasr Amra</string>
+    <string name="amman_citadel">Amman Citadel</string>
+    <string name="montreal">Montreal</string>
+    <string name="ajloun_castle">Ajloun Castle</string>
+    <string name="azraq_wetland_reserve">Azraq Wetland reserve</string>
+    <string name="petra_link">http://www.visitpetra.jo/</string>
+    <string name="mount_nebo_link">https://en.wikipedia.org/wiki/Mount_Nebo</string>
+    <string name="madaba_map_link">https://en.wikipedia.org/wiki/Madaba_Map</string>
+    <string name="royal_auto_museum_link">http://www.royalautomuseum.jo/</string>
+    <string name="qasr_amra_link">https://en.wikipedia.org/wiki/Qasr_Amra</string>
+    <string name="amman_citadel_link">http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A</string>
+    <string name="montreal_link">https://en.wikipedia.org/wiki/Montreal_(Crusader_castle)</string>
+    <string name="ajloun_castle_link">https://en.wikipedia.org/wiki/Ajloun_Castle</string>
+    <string name="azraq_wetland_reserve_link">https://en.wikipedia.org/wiki/Azraq_Wetland_Reserve</string>
+
+    <string name="king_mosque">King Abdullah I Mosque</string>
+    <string name="mango_house">Mango House</string>
+    <string name="king_mosque_link">https://en.wikipedia.org/wiki/King_Abdullah_I_Mosque</string>
+    <string name="mango_house_link">https://en.wikipedia.org/wiki/Mango_House</string>
+
 </resources>

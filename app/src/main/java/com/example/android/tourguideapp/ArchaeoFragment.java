@@ -28,9 +28,10 @@ public class ArchaeoFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_card_list, container, false);
 
         final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();
-        tourCards.add(new TourCard("Jordan Archaeological Museum", "http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A", R.drawable.jordan_archaeological_museum));
-        tourCards.add(new TourCard("Roman Theatre", "https://en.wikipedia.org/wiki/Roman_theater_(Amman)", R.drawable.roman_theatre));
-        tourCards.add(new TourCard("Roman Philadelphia", "https://en.wikipedia.org/wiki/Ala%C5%9Fehir", R.drawable.roman_philadelphia));
+        tourCards.add(new TourCard(getString(R.string.jordan_archaeological_museum) , getString(R.string.jordan_archaeological_museum_link), R.drawable.jordan_archaeological_museum));
+        tourCards.add(new TourCard(getString(R.string.roman_theatre), getString(R.string.roman_theatre_link), R.drawable.roman_theatre));
+        tourCards.add(new TourCard(getString(R.string.roman_philadelphia), getString(R.string.roman_philadelphia_link), R.drawable.roman_philadelphia));
+
         TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.colorPrimary);
 
         ListView cardListView = (ListView) rootView.findViewById(R.id.TourCardList);

@@ -28,12 +28,12 @@ public class MainSitesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_card_list, container, false);
 
         final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();
-        tourCards.add(new TourCard("Amman Citadel", "http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A", R.drawable.amman_citadel));
-        tourCards.add(new TourCard("King Abdullah I Mosque", "https://www.google.jo/url?sa=t&rct=j&q=&esrc=s&source=web&cd=19&cad=rja&uact=8&ved=0ahUKEwjOpqq2p_jNAhVNnRQKHZACDjMQmhMIqAEwEg&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKing_Abdullah_I_Mosque&usg=AFQjCNHJNuXRfcsM9aNbmRzmPBCYcptMuw&sig2=dmCc6QFjgcxoA0MIMyoabg&bvm=bv.127178174,d.d2s", R.drawable.king_abdullah_i_mosque));
-        tourCards.add(new TourCard("Roman Theatre", "https://en.wikipedia.org/wiki/Roman_theater_(Amman)", R.drawable.roman_theatre));
-        tourCards.add(new TourCard("Royal Automobile Museum", "http://www.royalautomuseum.jo/", R.drawable.royal_automobile_museum));
-        tourCards.add(new TourCard("Jordan Archaeological Museum", "http://culture.gov.jo/new/%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81/6952-%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86%D9%8A", R.drawable.jordan_archaeological_museum));
-        tourCards.add(new TourCard("Mango House", "https://en.wikipedia.org/wiki/Mango_House", R.drawable.mango_house));
+        tourCards.add(new TourCard(getString(R.string.amman_citadel), getString(R.string.amman_citadel_link), R.drawable.amman_citadel));
+        tourCards.add(new TourCard(getString(R.string.king_mosque), getString(R.string.king_mosque_link), R.drawable.king_abdullah_i_mosque));
+        tourCards.add(new TourCard(getString(R.string.roman_theatre), getString(R.string.roman_theatre_link), R.drawable.roman_theatre));
+        tourCards.add(new TourCard(getString(R.string.royal_auto_museum), getString(R.string.royal_auto_museum_link), R.drawable.royal_automobile_museum));
+        tourCards.add(new TourCard(getString(R.string.jordan_archaeological_museum), getString(R.string.jordan_archaeological_museum_link), R.drawable.jordan_archaeological_museum));
+        tourCards.add(new TourCard(getString(R.string.mango_house), getString(R.string.mango_house_link), R.drawable.mango_house));
 
 
         TourCardAdapter tourCardAdapter = new TourCardAdapter(getActivity(), tourCards, R.color.colorPrimary);
