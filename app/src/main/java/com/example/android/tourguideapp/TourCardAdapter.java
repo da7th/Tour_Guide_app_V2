@@ -45,9 +45,7 @@ public class TourCardAdapter extends ArrayAdapter<TourCard> {
         }
 /**
  View tourCardContainer = listItemView.findViewById(R.id.tour_card_container);
-
  int color = ContextCompat.getColor(getContext(), mColorResourceId);
-
  tourCardContainer.setBackgroundColor(color);
  **/
         return listItemView;
