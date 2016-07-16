@@ -44,11 +44,11 @@ public class TourCardAdapter extends ArrayAdapter<TourCard> {
             imageView.setVisibility(View.GONE);
         }
 /**
-        View tourCardContainer = listItemView.findViewById(R.id.tour_card_container);
+ View tourCardContainer = listItemView.findViewById(R.id.tour_card_container);
 
-        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+ int color = ContextCompat.getColor(getContext(), mColorResourceId);
 
-        tourCardContainer.setBackgroundColor(color);
+ tourCardContainer.setBackgroundColor(color);
  **/
         return listItemView;
     }

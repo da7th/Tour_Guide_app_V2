@@ -28,7 +28,7 @@ public class ArchaeoFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_card_list, container, false);
 
         final ArrayList<TourCard> tourCards = new ArrayList<TourCard>();
-        tourCards.add(new TourCard(getString(R.string.jordan_archaeological_museum) , getString(R.string.jordan_archaeological_museum_link), R.drawable.jordan_archaeological_museum));
+        tourCards.add(new TourCard(getString(R.string.jordan_archaeological_museum), getString(R.string.jordan_archaeological_museum_link), R.drawable.jordan_archaeological_museum));
         tourCards.add(new TourCard(getString(R.string.roman_theatre), getString(R.string.roman_theatre_link), R.drawable.roman_theatre));
         tourCards.add(new TourCard(getString(R.string.roman_philadelphia), getString(R.string.roman_philadelphia_link), R.drawable.roman_philadelphia));
 
