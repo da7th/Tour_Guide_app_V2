@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="88dp"
+    android:background="@android:color/black"
     android:orientation="horizontal">
 
     <ImageView
@@ -13,12 +16,18 @@
         android:id="@+id/tour_card_text"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:text="lutti" />
 
     <ImageView
         android:id="@+id/tour_card_link"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
         android:layout_gravity="center_vertical" />
 
 </LinearLayout>

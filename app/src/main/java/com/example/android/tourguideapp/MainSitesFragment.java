@@ -58,7 +58,7 @@ public class MainSitesFragment extends Fragment {
                 if (!url.startsWith("http://") && !url.startsWith("https://"))
                     url = "http://" + url;
 
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(browserIntent);
             }
         });

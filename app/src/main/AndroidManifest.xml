@@ -15,6 +15,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainSitesActivity"
+            android:label="Main Sites"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ArchaeoActivity"
+            android:label="Archaeological"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HistoricalActivity"
+            android:label="Historical"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FactsActivity"
+            android:label="Jordan Facts"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

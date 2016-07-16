@@ -1,7 +1,6 @@
 package com.example.android.tourguideapp;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,13 +43,13 @@ public class TourCardAdapter extends ArrayAdapter<TourCard> {
         } else {
             imageView.setVisibility(View.GONE);
         }
-
+/**
         View tourCardContainer = listItemView.findViewById(R.id.tour_card_container);
 
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
 
         tourCardContainer.setBackgroundColor(color);
-
+ **/
         return listItemView;
     }
 

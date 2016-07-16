@@ -13,14 +13,14 @@ public class TourCard {
 
 
     public TourCard(String cardInfo, String cardInfoLink, int cardImageResourceId) {
-        cardInfo = mCardInfo;
-        cardInfoLink = mCardInfoLink;
-        cardImageResourceId = mCardImageResourceId;
+        mCardInfo = cardInfo;
+        mCardInfoLink = cardInfoLink;
+        mCardImageResourceId = cardImageResourceId;
     }
 
     public TourCard(String cardInfo, String cardInfoLink) {
-        cardInfo = mCardInfo;
-        cardInfoLink = mCardInfoLink;
+        mCardInfo = cardInfo;
+        mCardInfoLink = cardInfoLink;
     }
 
     public String getCardInfo() {
